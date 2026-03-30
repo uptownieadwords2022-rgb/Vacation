@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Your Vacation Look is Waiting ☀️</title>
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; outline: none; text-decoration: none; display: block; }
+    body { background-color: #f4f0eb; font-family: 'Georgia', 'Times New Roman', serif; }
+
+    /* Wrapper */
+    .email-wrapper { width: 100%; background-color: #f4f0eb; padding: 32px 0; }
+    .email-container { max-width: 600px; margin: 0 auto; background-color: #ffffff; }
+
+    /* Header */
+    .header { background-color: #ffffff; padding: 28px 40px 20px; text-align: center; border-bottom: 1px solid #e8e0d6; }
+    .header img { max-width: 180px; height: auto; }
+
+    /* Hero Image */
+    .hero-image { width: 100%; position: relative; overflow: hidden; }
+    .hero-image img { width: 100%; height: auto; display: block; }
+    .hero-overlay { position: relative; background: linear-gradient(180deg, rgba(255,255,255,0) 60%, rgba(255,255,255,0.15) 100%); }
+
+    /* Nudge Banner */
+    .nudge-banner { background-color: #2c2c2c; color: #f4e9d8; text-align: center; padding: 12px 24px; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; font-family: 'Arial', sans-serif; }
+
+    /* Body Content */
+    .body-content { padding: 44px 48px 36px; text-align: center; }
+    .eyebrow { font-family: 'Arial', sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #9e7e5c; margin-bottom: 16px; }
+    .headline { font-family: 'Georgia', 'Times New Roman', serif; font-size: 32px; font-weight: normal; line-height: 1.25; color: #1a1a1a; margin-bottom: 20px; }
+    .subtext { font-family: 'Arial', sans-serif; font-size: 15px; line-height: 1.8; color: #555555; margin-bottom: 32px; max-width: 460px; margin-left: auto; margin-right: auto; }
+
+    /* CTA */
+    .cta-wrapper { margin: 0 auto 12px; }
+    .cta-btn {
+      display: inline-block;
+      background-color: #1a1a1a;
+      color: #ffffff !important;
+      text-decoration: none;
+      font-family: 'Arial', sans-serif;
+      font-size: 13px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      padding: 17px 48px;
+      border-radius: 1px;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+    }
+    .cta-secondary { margin-top: 16px; }
+    .cta-secondary a {
+      font-family: 'Arial', sans-serif;
+      font-size: 12px;
+      color: #9e7e5c;
+      text-decoration: underline;
+      letter-spacing: 1px;
+    }
+
+    /* Divider */
+    .divider { border: none; border-top: 1px solid #ece6de; margin: 36px 48px; }
+
+    /* Features Strip */
+    .features { padding: 0 32px 40px; }
+    .features table { width: 100%; }
+    .feature-item { text-align: center; padding: 0 12px; vertical-align: top; }
+    .feature-icon { font-size: 20px; margin-bottom: 8px; }
+    .feature-title { font-family: 'Arial', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #1a1a1a; margin-bottom: 5px; }
+    .feature-desc { font-family: 'Arial', sans-serif; font-size: 12px; color: #888888; line-height: 1.5; }
+
+    /* Urgency Strip */
+    .urgency-strip { background-color: #f9f4ee; border-top: 1px solid #e8e0d6; border-bottom: 1px solid #e8e0d6; padding: 16px 40px; text-align: center; }
+    .urgency-strip p { font-family: 'Arial', sans-serif; font-size: 12px; color: #7a5c3e; letter-spacing: 1px; }
+    .urgency-strip strong { font-weight: 700; }
+
+    /* Footer */
+    .footer { background-color: #1a1a1a; padding: 36px 40px; text-align: center; }
+    .footer p { font-family: 'Arial', sans-serif; font-size: 11px; color: #888888; line-height: 2; }
+    .footer a { color: #aaaaaa; text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+    .footer .social-links { margin-bottom: 16px; }
+    .footer .social-links a { color: #cccccc; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; margin: 0 10px; }
+    .footer .brand { font-family: 'Georgia', serif; font-size: 16px; color: #ffffff; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 20px; }
+
+    /* Mobile */
+    @media only screen and (max-width: 600px) {
+      .email-wrapper { padding: 0 !important; }
+      .body-content { padding: 32px 24px 28px !important; }
+      .headline { font-size: 26px !important; }
+      .features { padding: 0 16px 32px !important; }
+      .feature-item { display: block !important; width: 100% !important; margin-bottom: 20px; }
+      .divider { margin: 28px 24px !important; }
+      .footer { padding: 28px 24px !important; }
+      .header { padding: 20px 24px !important; }
+      .nudge-banner { font-size: 11px !important; letter-spacing: 1px !important; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Preheader text (hidden) -->
+  <div style="display:none; font-size:1px; color:#f4f0eb; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden;">
+    You left something beautiful behind — your vacation wardrobe is calling. ☀️ Shop now before it sells out.
+  </div>
+
+  <div class="email-wrapper">
+    <div class="email-container">
+
+      <!-- Header / Logo -->
+      <div class="header">
+        <a href="https://uptownie.com/collections/vacation-edit-2" target="_blank">
+          <img
+            src="https://cdn.shopify.com/s/files/1/1780/3381/files/UPTOWNIE_Black_Logo_200_50Px_-_1.png?v=1774601020"
+            alt="UPTOWNIE"
+            width="160"
+            style="max-width:160px; height:auto;"
+          />
+        </a>
+      </div>
+
+      <!-- Nudge Banner -->
+      <div class="nudge-banner">
+        Still thinking about it? &nbsp;|&nbsp; Limited pieces available
+      </div>
+
+      <!-- Hero Image -->
+      <div class="hero-image hero-overlay">
+        <a href="https://uptownie.com/collections/vacation-edit-2" target="_blank">
+          <img
+            src="https://cdn.shopify.com/s/files/1/1780/3381/files/Green_Pure_Cotton_Shoulder_Tie-Up_Midi_Dress_-_Ai_static.png?v=1774855408"
+            alt="Green Pure Cotton Shoulder Tie-Up Midi Dress"
+            width="600"
+            style="width:100%; max-width:600px; height:auto; display:block;"
+          />
+        </a>
+      </div>
+
+      <!-- Body Content -->
+      <div class="body-content">
+        <p class="eyebrow">Vacation Edit &rsquo;26</p>
+        <h1 class="headline">You Deserve a Holiday.<br/>Your Wardrobe Does Too.</h1>
+        <p class="subtext">
+          You checked us out — we noticed. The pieces you browsed are crafted for long golden hours, sea-salt air, and effortless style. Pure cotton. Easy fits. Made to move with you.
+          <br/><br/>
+          They won't wait forever.
+        </p>
+
+        <div class="cta-wrapper">
+          <a
+            href="https://uptownie.com/collections/vacation-edit-2"
+            class="cta-btn"
+            target="_blank"
+          >
+            Shop the Vacation Edit
+          </a>
+        </div>
+        <div class="cta-secondary">
+          <a href="https://uptownie.com/collections/vacation-edit-2" target="_blank">View All Styles &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Urgency Strip -->
+      <div class="urgency-strip">
+        <p>&#x1F553;&nbsp; <strong>Selling Fast:</strong> Many styles from your recent browse are almost gone. Secure yours today.</p>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- Features Strip -->
+      <div class="features">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="feature-item" width="33%">
+              <div class="feature-icon">&#x1F33F;</div>
+              <p class="feature-title">Pure Cotton</p>
+              <p class="feature-desc">Breathable, soft &amp; kind to skin — perfect for every climate.</p>
+            </td>
+            <td class="feature-item" width="33%">
+              <div class="feature-icon">&#x2708;&#xFE0F;</div>
+              <p class="feature-title">Travel-Ready</p>
+              <p class="feature-desc">Pack light, look polished. Designed for life on the move.</p>
+            </td>
+            <td class="feature-item" width="33%">
+              <div class="feature-icon">&#x1F4E6;</div>
+              <p class="feature-title">Free Shipping</p>
+              <p class="feature-desc">On orders above ₹999. Returns made easy, always.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p class="brand">Uptownie</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/uptownieindia/" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/uptownieindia/" target="_blank">Facebook</a>
+          <a href="https://uptownie.com" target="_blank">Website</a>
+        </div>
+        <p>
+          You're receiving this because you recently browsed our Vacation Edit collection.<br/>
+          <a href="{{unsubscribe_url}}">Unsubscribe</a> &nbsp;|&nbsp;
+          <a href="https://uptownie.com/pages/privacy-policy">Privacy Policy</a> &nbsp;|&nbsp;
+          <a href="https://uptownie.com">uptownie.com</a>
+        </p>
+        <p style="margin-top:12px; color:#555555;">
+          &copy; 2026 Uptownie. All rights reserved.<br/>
+          India
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
